@@ -2,7 +2,7 @@ import pytest
 from src.other import clear_v1
 from src.auth import auth_register_v1, auth_login_v1
 from src.error import InputError, AccessError
-from src.channel import channel_messages_v1
+from src.channel import channel_messages_v1, channel_join_v1
 from src.channels import channels_create_v1
 from src.database import accData, channelList
 
@@ -22,17 +22,18 @@ def test_channel_messages_invalid_userid():
     user = auth_register_v1("email@gmail.com", "password", "Name", "Lastname")
     channel = channels_create_v1(user["auth_user_id"], "testchannel", True)
     invalid_id = 1
-    with pytest.raises(AccessError):
-        assert channel_messages_v1(invalid_id, channel["channel_id"], 0) == AccessError
+    with pytest.raises(InputError):
+        assert channel_messages_v1(invalid_id, channel["channel_id"], 0) == InputError
 
 def test_channel_messages_invalid_channelid():
 
     clear_v1()
     user = auth_register_v1("email@gmail.com", "password", "Name", "Lastname")
     channel = channels_create_v1(user["auth_user_id"], "testchannel", True)
+    print(channelList)
     invalid_channel_id = 1
-    with pytest.raises(AccessError):
-        assert channel_messages_v1(user["auth_user_id"], invalid_channel_id, 0) == AccessError
+    with pytest.raises(InputError):
+        assert channel_messages_v1(user["auth_user_id"], invalid_channel_id, 0) == InputError
 
 def test_channel_messages_unauthorised_user():
 
@@ -60,4 +61,7 @@ def test_channel_messages_endnegativeone():
     channel = channels_create_v1(user["auth_user_id"], "testchannel", True)
     messages = channel_messages_v1(user["auth_user_id"], channel["channel_id"], 0)
     assert messages["end"] == -1
+
+
+# Channel Leave Tests
 

@@ -62,7 +62,9 @@ def test_channels_create_private():
     clear_v1()
     user = auth_register_v1("email@gmail.com", "password", "Name", "Lastname")
     user_id = user.get("auth_user_id")
-    channel = channels_create_v1(user_id, "testChannel", False)
+
+    channel = channels_create_v1(user_id, "3", False)
+    
     assert channelList[0].get("is_public") == False
 
 
