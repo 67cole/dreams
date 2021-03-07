@@ -29,6 +29,14 @@ def channel_details_v1(auth_user_id, channel_id):
 
 def channel_messages_v1(auth_user_id, channel_id, start):
 
+    # Check if channel id is valid
+    if valid_channelid(channel_id) is False:
+        raise InputError("Error: Invalid channel")
+
+    # Check if user id is valid
+    if valid_userid(auth_user_id) is False:
+        raise InputError("Error: Invalid user id")
+
     #Check if user is authorised to be in the channel
     authorisation = False
     for channel in channelList:
@@ -41,12 +49,8 @@ def channel_messages_v1(auth_user_id, channel_id, start):
         raise AccessError("User is not in channel")
 
     # Check if user id is valid
-    if valid_userid is False:
+    if valid_userid(auth_user_id) is False:
         raise AccessError("Error: Invalid user id")
-
-    # Check if channel id is valid
-    if valid_channelid is False:
-        raise AccessError("Error: Invalid channel")
 
     # Return Function
     for channel in channelList:
@@ -91,8 +95,7 @@ def channel_leave_v1(auth_user_id, channel_id):
     }
 
 def channel_join_v1(auth_user_id, channel_id):
-    return {
-    }
+    return {}
 
 def channel_addowner_v1(auth_user_id, channel_id, u_id):
     return {
@@ -116,4 +119,22 @@ def valid_channelid(channel_id):
     for channel in channelList:
         if channel.get("id") is channel_id:
             return True
+    
+    return False
+
+def check_channelprivate(channel_id):
+
+    for channel in channelList:
+        if channel.get("id") is channel_id:
+            if channel.get("is_public") is True:
+                return False
+    return True
+
+def check_useralreadyinchannel(auth_user_id, channel_id):
+
+    for channel in channelList:
+        if channel.get("id") is channel_id:
+            for member in channel["member_ids"]:
+                if auth_user_id is member:
+                    return True
     return False
