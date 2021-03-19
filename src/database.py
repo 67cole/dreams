@@ -1,2 +1,0 @@
-accData = []
-channelList = []

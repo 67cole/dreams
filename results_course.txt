@@ -1,0 +1,223 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.3, pytest-6.1.0, py-1.9.0, pluggy-0.13.1
+rootdir: /tmp_amd/ravel/export/ravel/1/hsmith/automark/tempstore, configfile: pytest.ini
+plugins: hypothesis-5.36.1
+collected 76 items
+
+tests/echo_test.py FF                                                    [  2%]
+tests/auth_tests/auth_login_test.py ...                                  [  6%]
+tests/auth_tests/auth_register_test.py ................................  [ 48%]
+tests/channel_tests/channel_details_test.py ....                         [ 53%]
+tests/channel_tests/channel_invite_test.py F.F..F                        [ 61%]
+tests/channel_tests/channel_join_test.py F..F                            [ 67%]
+tests/channel_tests/channel_messages_test.py ...F.                       [ 73%]
+tests/channels_tests/channels_create_test.py .....                       [ 80%]
+tests/channels_tests/channels_list_test.py ..........                    [ 93%]
+tests/channels_tests/channels_listall_test.py .....                      [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_echo ___________________________________
+
+    def test_echo():
+>       assert echo.echo("1") == "1", "1 == 1"
+E       NameError: name 'echo' is not defined
+
+tests/echo_test.py:7: NameError
+_______________________________ test_echo_except _______________________________
+
+    def test_echo_except():
+        with pytest.raises(InputError):
+>           assert echo.echo("echo")
+E           NameError: name 'echo' is not defined
+
+tests/echo_test.py:14: NameError
+___________________________ test_invite_global_owner ___________________________
+
+user_woody = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0)
+user_zerg = User(email='zerg.thedestroyer@zergworld.com', password='!!qazwsx', name_first='lord', name_last='zerg', u_id=1, token=1)
+zergs_private_lair = Channel(name='zergs lair', is_public=False, channel_id=0, owner_members=[1], all_members=[])
+
+    @util.resets_workspace
+    def test_invite_global_owner(user_woody, user_zerg, zergs_private_lair):
+        channel_invite_v1(user_zerg.token, zergs_private_lair.channel_id, user_woody.u_id)
+    
+        ch_deets = channel_details_v1(user_woody.token, zergs_private_lair.channel_id)
+    
+        assert user_woody.u_id in [k['u_id'] for k in ch_deets['all_members']]
+>       assert user_woody.u_id in [k['u_id'] for k in ch_deets['owner_members']]
+E       AssertionError: assert 0 in [1]
+E        +  where 0 = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0).u_id
+
+tests/channel_tests/channel_invite_test.py:26: AssertionError
+___________________ test_invitation_from_non_channel_member ____________________
+
+user_woody = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0)
+user_buzz = User(email='buzz.lightyear@starcommand.com', password='qazwsx@@', name_first='buzz', name_last='lightyear', u_id=1, token=1)
+zergs_private_lair = Channel(name='zergs lair', is_public=False, channel_id=0, owner_members=[2], all_members=[])
+
+    @util.resets_workspace
+    def test_invitation_from_non_channel_member(user_woody, user_buzz, zergs_private_lair):
+        with pytest.raises(err.AccessError):
+>           channel_invite_v1(user_woody, zergs_private_lair.channel_id, user_buzz.u_id)
+
+tests/channel_tests/channel_invite_test.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+auth_user_id = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0)
+channel_id = 0, u_id = 1
+
+    def channel_invite_v1(auth_user_id, channel_id, u_id):
+        #check if channel exists
+        channelExists = False
+        for channel in channelList:
+            if channel_id is channel["id"]:
+                #channel does exist
+                channelExists = True
+                break
+        if channelExists is False:
+            #channel does not exist
+            raise InputError ("Channel does not exist")
+    
+        #check if auth_user_id exists
+        auth_id_status = False
+        for user in accData:
+            if user.get("id") is auth_user_id:
+                #auth_user_id exists
+                auth_id_status = True
+                break
+    
+        if auth_id_status is False:
+            # auth_user_id does not exist
+>           raise InputError ("Inviting user does not exist")
+E           src.error.InputError: Inviting user does not exist
+
+src/channel.py:51: InputError
+____________________________ test_invalidated_token ____________________________
+
+woodys_public_toybox = Channel(name='woodys toybox', is_public=True, channel_id=0, owner_members=[0], all_members=[])
+user_buzz = User(email='buzz.lightyear@starcommand.com', password='qazwsx@@', name_first='buzz', name_last='lightyear', u_id=1, token=1)
+
+    @util.resets_workspace
+    def test_invalidated_token(woodys_public_toybox, user_buzz):
+        with pytest.raises(err.AccessError):
+>           channel_invite_v1(None, woodys_public_toybox.channel_id, user_buzz.u_id)
+
+tests/channel_tests/channel_invite_test.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+auth_user_id = None, channel_id = 0, u_id = 1
+
+    def channel_invite_v1(auth_user_id, channel_id, u_id):
+        #check if channel exists
+        channelExists = False
+        for channel in channelList:
+            if channel_id is channel["id"]:
+                #channel does exist
+                channelExists = True
+                break
+        if channelExists is False:
+            #channel does not exist
+            raise InputError ("Channel does not exist")
+    
+        #check if auth_user_id exists
+        auth_id_status = False
+        for user in accData:
+            if user.get("id") is auth_user_id:
+                #auth_user_id exists
+                auth_id_status = True
+                break
+    
+        if auth_id_status is False:
+            # auth_user_id does not exist
+>           raise InputError ("Inviting user does not exist")
+E           src.error.InputError: Inviting user does not exist
+
+src/channel.py:51: InputError
+____________________ test_global_owner_join_channel_private ____________________
+
+user_woody = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0)
+zergs_private_lair = Channel(name='zergs lair', is_public=False, channel_id=0, owner_members=[1], all_members=[])
+
+    @util.resets_workspace
+    def test_global_owner_join_channel_private(user_woody, zergs_private_lair):
+>       channel_join_v1(user_woody.token, zergs_private_lair.channel_id)
+
+tests/channel_tests/channel_join_test.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+auth_user_id = 0, channel_id = 0
+
+    def channel_join_v1(auth_user_id, channel_id):
+    
+        # check whether id is valid
+        if valid_userid(auth_user_id) is False:
+            raise InputError("Error: Invalid user id")
+    
+        # check whether channel is invalid
+        if valid_channelid(channel_id) is False:
+            raise InputError("Error: Invalid channel")
+    
+        # check if channel is private
+        if check_channelprivate(channel_id) is True:
+>           raise AccessError("Private Channel")
+E           src.error.AccessError: Private Channel
+
+src/channel.py:346: AccessError
+____________________________ test_invalidated_token ____________________________
+
+woodys_public_toybox = Channel(name='woodys toybox', is_public=True, channel_id=0, owner_members=[0], all_members=[])
+
+    @util.resets_workspace
+    def test_invalidated_token(woodys_public_toybox):
+        with pytest.raises(err.AccessError):
+>           channel_join_v1(None, woodys_public_toybox.channel_id)
+
+tests/channel_tests/channel_join_test.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+auth_user_id = None, channel_id = 0
+
+    def channel_join_v1(auth_user_id, channel_id):
+    
+        # check whether id is valid
+        if valid_userid(auth_user_id) is False:
+>           raise InputError("Error: Invalid user id")
+E           src.error.InputError: Error: Invalid user id
+
+src/channel.py:338: InputError
+___________________ test_input_error_when_channel_id_invalid ___________________
+
+user_woody = User(email='sheriff.woody@andysroom.com', password='qazwsx!!', name_first='sheriff', name_last='woody', u_id=0, token=0)
+
+    @util.resets_workspace
+    def test_input_error_when_channel_id_invalid(user_woody):
+        with pytest.raises(err.InputError):
+>           channel_messages_v1(user_woody.token, None, 0)
+
+tests/channel_tests/channel_messages_test.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+auth_user_id = 0, channel_id = None, start = 0
+
+    def channel_messages_v1(auth_user_id, channel_id, start):
+    
+        # Check if user id is valid
+        if valid_userid(auth_user_id) is False:
+            raise AccessError("Error: Invalid user id")
+    
+        # Check if channel id is valid
+        if valid_channelid(channel_id) is False:
+>           raise AccessError("Error: Invalid channel")
+E           src.error.AccessError: Error: Invalid channel
+
+src/channel.py:255: AccessError
+=========================== short test summary info ============================
+FAILED tests/echo_test.py::test_echo - NameError: name 'echo' is not defined
+FAILED tests/echo_test.py::test_echo_except - NameError: name 'echo' is not d...
+FAILED tests/channel_tests/channel_invite_test.py::test_invite_global_owner
+FAILED tests/channel_tests/channel_invite_test.py::test_invitation_from_non_channel_member
+FAILED tests/channel_tests/channel_invite_test.py::test_invalidated_token - s...
+FAILED tests/channel_tests/channel_join_test.py::test_global_owner_join_channel_private
+FAILED tests/channel_tests/channel_join_test.py::test_invalidated_token - src...
+FAILED tests/channel_tests/channel_messages_test.py::test_input_error_when_channel_id_invalid
+========================= 8 failed, 68 passed in 0.42s =========================
