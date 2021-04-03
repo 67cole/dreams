@@ -36,7 +36,7 @@ def channels_list_v1(auth_user_id):
     return {'channels': newchannelList}
 
 '''
-channels_list_v1 takes in a user_id string.
+channels_listall_v1 takes in a user_id string.
 The functions then checks if the user_id is valid.
 If the user_id is valid, the function then returns all channels.
 Arguments:

@@ -2,11 +2,8 @@ import pytest
 from src.other import clear_v1
 from src.auth import auth_register_v1, auth_login_v1
 from src.error import InputError, AccessError
-from src.channel import channel_messages_v1
-from src.channel import channel_join_v1
-from src.channels import channels_create_v1
-from src.channels import channels_listall_v1
-from src.channels import channels_list_v1
+from src.channel import channel_messages_v1, channel_join_v1
+from src.channels import channels_create_v1, channels_listall_v1, channels_list_v1
 from src.database import accData, channelList
 
 # Channel Create Tests
@@ -14,7 +11,7 @@ from src.database import accData, channelList
 def test_channels_create():
 
     # Testing if a channel can be created
-    
+
     clear_v1()
     user = auth_register_v1("email@gmail.com", "password", "Name", "Lastname")
     channel = channels_create_v1(user.get("auth_user_id"), "testchannel", True)
