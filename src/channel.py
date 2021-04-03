@@ -397,4 +397,3 @@ def check_useralreadyinchannel(auth_user_id, channel_id):
                 if auth_user_id is member:
                     return True
     return False
-    
