@@ -12,14 +12,6 @@ def clear_v1():
     '''
     Reset Everything to default state
     '''
-<<<<<<< HEAD
-    global data
-    data["accData"].clear() 
-    data["channelList"].clear() 
-    with open("serverDatabase.json", "w") as dataFile:
-        dataFile.write(dumps(data))
-
-=======
     
     global data
     data["accData"].clear() 
@@ -30,9 +22,8 @@ def clear_v1():
         dataFile.write(dumps(data))
 
 
->>>>>>> master
 
-def search_v1(auth_user_id, query_str):
+def search_v1(auth_user_id, qugery_str):
     return {
         'messages': [
             {

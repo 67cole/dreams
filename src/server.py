@@ -67,7 +67,6 @@ def authLogout():
     returnData = auth_logout_v1(inputData)
     saveData()
     return dumps(returnData)
-<<<<<<< HEAD
 # ##############################################################################
 # CHANNELS FUNCTIONS
 
@@ -79,8 +78,6 @@ def channelsCreate():
     return dumps(returnData)
 
 
-=======
->>>>>>> master
 # ##############################################################################
 
 @APP.route("/clear/v1", methods=["DELETE"])
