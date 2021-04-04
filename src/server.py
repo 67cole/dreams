@@ -9,6 +9,8 @@ from src.auth import auth_register_v2, auth_login_v2, auth_logout_v1
 from src.user import user_profile_v2, user_profile_setemail_v2, users_all_v1
 from src.user import user_profile_setname_v2, user_profile_sethandle_v1
 from src.utils import saveData
+from src.channel import channel_removeowner_v1, channel_leave_v1
+from src.dm import dm_leave_v1, dm_remove_v1, dm_messages_v1, dm_create_v1, dm_list_v1
 from src.other import clear_v1
 
 def defaultHandler(err):
@@ -102,7 +104,58 @@ def usersAll():
     saveData()
     return dumps(returnData)
 
+# ##############################################################################
+# CHANNEL FUNCTIONS
+@APP.route("/channel/leave/v1", methods=["POST"])
+def channelLeave():
+    inputData = request.get_json()
+    returnData = channel_leave_v1(inputData["token"], inputData["channel_id"])
+    saveData()
+    return dumps(returnData)
 
+@APP.route("/channel/removeowner/v1", methods=["POST"])
+def channelRemoveowner():
+    inputData = request.get_json()
+    returnData = channel_removeowner_v1(inputData["token"], inputData["channel_id"])
+    saveData()
+    return dumps(returnData)
+# ##############################################################################
+# DM FUNCTIONS
+@APP.route("/dm/messages/v1", methods=["GET"])
+def dmMessages():
+    inputToken = request.args.get("token")
+    inputdmID = request.args.get("dm_id")
+    inputStart = request.args.get("start")
+    returnData = dm_messages_v1(inputToken, inputdmID, inputStart)
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/leave/v1", methods=["POST"])
+def dmLeave():
+    inputData = request.get_json()
+    returnData = dm_leave_v1(inputData["token"], inputData["dm_id"])
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/remove/v1", methods=["DELETE"])
+def dmRemove():
+    inputData = request.get_json()
+    dm_remove_v1(inputData["token"], inputData["dm_id"])
+    return {}
+
+@APP.route("/dm/create/v1", methods=["POST"])
+def dmCreate():
+    inputData = request.get_json()
+    returnData = dm_create_v1(inputData["token"], inputData["u_ids"])
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/list/v1", methods=["GET"])
+def dmList():
+    inputToken = request.args.get("token")
+    returnData = dm_list_v1(inputToken)
+    saveData()
+    return dumps(returnData)
 
 # ##############################################################################
 
