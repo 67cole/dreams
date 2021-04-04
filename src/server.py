@@ -6,7 +6,6 @@ from src.error import InputError, AccessError
 from src import config
 from src.database import data, secretSauce
 from src.auth import auth_register_v2, auth_login_v2, auth_logout_v1
-from src.channels import channels_create_v2
 from src.utils import saveData
 from src.other import clear_v1
 
@@ -30,17 +29,13 @@ APP.register_error_handler(Exception, defaultHandler)
 # ##############################################################################
 # DATABASE FUNCTIONS
 
-# Open database
+# Load database
 with open("serverDatabase.json", "r") as dataFile:
-    global data
     data = loads(dataFile.read())
-    
-'''
-# Returns serverDatabase
+
 def getData():
     global data
     return data
-'''
 
 # ##############################################################################
 # AUTH FUNCTIONS
@@ -48,6 +43,8 @@ def getData():
 @APP.route("/auth/register/v2", methods=["POST"])
 def authRegister():
     inputData = request.get_json()
+    data = getData()
+    print(data)
     returnData = auth_register_v2(
             inputData["email"], inputData["password"], inputData["name_first"], inputData["name_last"])
     saveData()
@@ -67,17 +64,6 @@ def authLogout():
     returnData = auth_logout_v1(inputData)
     saveData()
     return dumps(returnData)
-# ##############################################################################
-# CHANNELS FUNCTIONS
-
-@APP.route("/channels/create/v2", methods=["POST"])
-def channelsCreate():
-    inputData = request.get_json()
-    returnData = channels_create_v2(inputData["token"], inputData["name"], inputData["is_public"])
-    saveData()
-    return dumps(returnData)
-
-
 # ##############################################################################
 
 @APP.route("/clear/v1", methods=["DELETE"])
