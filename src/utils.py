@@ -43,6 +43,16 @@ def check_useralreadyinchannel(auth_user_id, channel_id):
                     return True
     return False
 
+def check_useralreadyindm(auth_user_id, dm_id):
+    for dms in data["dmList"]:
+        if dms.get("id") is dm_id:
+            for member in dms["member_ids"]:
+                if auth_user_id is member:
+                    return True
+    return False
+
+
+
 def check_messageid(message_id):
 
     for i in data["channelList"]:
@@ -55,8 +65,8 @@ def getchannelID(message_id):
 
     for i in data["channelList"]:
         for message1 in i['messages']:
-            if message1.get('message_id') is message_id:
-                channel_id1 = i.get("channel_id")
+            if message1["message_id"] is message_id:
+                channel_id1 = i.get("id")
                 break
     return channel_id1
 
