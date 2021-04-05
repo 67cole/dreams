@@ -21,7 +21,13 @@ def clear_v1():
 
 
 
-def search_v1(auth_user_id, query_str):
+def search_v1(token, query_str):
+
+    auth_user_id = get_user_id_from_token(token)
+
+    if len(query_str) > 1000:
+        raise InputError(description="Error: Query string is above 1000 characters")
+
     return {
         'messages': [
             {
