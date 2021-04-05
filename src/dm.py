@@ -114,8 +114,6 @@ def dm_messages_v1(token, dm_id, start):
     if authorisation is False:
         raise AccessError("User is not in dm")
 
-
-
     # Return Function
     for dm in data["dmList"]:
         if dm["id"] is dm_id:
@@ -154,7 +152,7 @@ def dm_leave_v1(token, dm_id):
 
     # Invalid dm_id
     if valid_dmid(dm_id) is False:
-        raise InputError
+        raise InputError(description="Not a valid dm id")
     # Main Implemenation
     for dm in data["dmList"]:
         if dm_id is dm["id"]:
@@ -171,7 +169,7 @@ def dm_remove_v1(token, dm_id):
 
     # Invalid dm_id
     if valid_dmid(dm_id) is False:
-        raise InputError
+        raise InputError(description="Not a valid dm id")
 
     # User is not DM creator and main Implementation
     for dm in data["dmList"]:
@@ -181,3 +179,9 @@ def dm_remove_v1(token, dm_id):
             else:
                 data["dmList"].remove(dm)
                 return
+
+def dm_details_v1(token, dm_id):
+
+    auth_user_id = get_user_id_from_token(token)
+    if valid_dmid(dm_id) is False:
+        raise InputError(description="Not a valid dm id")

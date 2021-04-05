@@ -107,49 +107,18 @@ def usersAll():
     saveData()
     return dumps(returnData)
 
-# COLINS CODE BELOW:
-'''
+# ##############################################################################
+# MESSAGE FUNCTIONS
 
-# #############################################################################
-#                                                                             #
-#                           MESSAGE FUNCTIONS                                 #
-#                                                                             #
-# #############################################################################
+# ##############################################################################
+# CHANNELS FUNCTIONS
 
-@APP.route("/message/send/v2", methods=["POST"])
-def messageSend():
-    inputData = request.get_json()
-    returnData = message_send_v2(inputData["token"], inputData["channel_id"], inputData["message"])
+@APP.route("/channels/list/v2", methods=["GET"])
+def channelList():
+    inputToken = request.args.get("token")
+    returnData = channels_list_v2(inputToken)
     saveData()
     return dumps(returnData)
-
-@APP.route("/message/edit/v2", methods=["PUT"])
-def messageEdit():
-    inputData = request.get_json()
-    returnData = message_edit_v2(inputData["token"], inputData["message_id"], inputData["message"])
-    saveData()
-    return dumps(returnData)
-
-@APP.route("/message/remove/v1", methods=["DELETE"])
-def messageRemove():
-    inputData = request.get_json()
-    returnData = message_remove_v1(inputdata["token"], inputData["message_id"])
-    saveData()
-    return dumps(returnData)
-    
-@APP.route("/message/senddm/v1", methods=["POST"])
-def messageRemove():
-    inputData = request.get_json()
-    returnData = message_senddm_v1(inputdata["token"], inputData["dm_id"], inputdata["message"])
-    saveData()
-    return dumps(returnData)
-'''
-
-# #############################################################################
-#                                                                             #
-#                           CHANNELS FUNCTIONS                                #
-#                                                                             #
-# #############################################################################
 
 @APP.route("/channels/create/v2", methods=["POST"])
 def channelsCreate():
@@ -158,14 +127,8 @@ def channelsCreate():
     saveData()
     return dumps(returnData)
 
-
-
-
-# #############################################################################
-#                                                                             #
-#                           CHANNEL FUNCTIONS                                 #
-#                                                                             #
-# #############################################################################
+# ##############################################################################
+# CHANNEL FUNCTIONS
 
 @APP.route("/channel/messages/v2", methods=["GET"])
 def channelMessages():
@@ -178,22 +141,36 @@ def channelMessages():
     saveData()
     return dumps(returnData)
 
-
-
-'''
 @APP.route("/channel/addowner/v1", methods=["POST"])
 def channelAddowner():
     inputData = request.get_json()
     returnData = channel_addowner_v1(inputData["token"], inputData["channel_id"], inputData["u_id"])
     saveData()
     return dumps(returnData)
-'''
 
-# #############################################################################
-#                                                                             #
-#                           DM FUNCTIONS                                      #
-#                                                                             #
-# #############################################################################
+# ##############################################################################
+# DM FUNCTIONS
+
+@APP.route("/dm/messages/v1", methods=["GET"])
+def dmMessages():
+    inputToken = request.args.get("token")
+    inputdmID = int(request.args.get("dm_id"))
+    inputStart = int(request.args.get("start"))
+    returnData = dm_messages_v1(inputToken, inputdmID, inputStart)
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/leave/v1", methods=["POST"])
+def dmLeave():
+    inputData = request.get_json()
+    dm_leave_v1(inputData["token"], inputData["dm_id"])
+    return {}
+
+@APP.route("/dm/remove/v1", methods=["DELETE"])
+def dmRemove():
+    inputData = request.get_json()
+    dm_remove_v1(inputData["token"], inputData["dm_id"])
+    return {}
 
 @APP.route("/dm/create/v1", methods=["POST"])
 def dmCreate():
