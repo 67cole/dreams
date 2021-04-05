@@ -51,8 +51,7 @@ def test_http_channel_removeowner_working():
         "channel_id": channelR["channel_id"],
         "u_id": user2R["auth_user_id"],
     }
-    channelOwner = requests.post(config.url + funcURL, json=inputData)
-    channelOwnerR = json.loads(channelOwner.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Removing Owner--------------------
     funcURL = "channel/removeowner/v1"
@@ -107,8 +106,7 @@ def test_http_channel_removeowner_invalid_user():
         "channel_id": channelR["channel_id"],
         "u_id": user2R["auth_user_id"],
     }
-    channelOwner = requests.post(config.url + funcURL, json=inputData)
-    channelOwnerR = json.loads(channelOwner.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Removing Owner--------------------
     funcURL = "channel/removeowner/v1"
@@ -163,8 +161,7 @@ def test_http_channel_removeowner_invalid_channel():
         "channel_id": channelR["channel_id"],
         "u_id": user2R["auth_user_id"],
     }
-    channelOwner = requests.post(config.url + funcURL, json=inputData)
-    channelOwnerR = json.loads(channelOwner.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Removing Owner--------------------
     funcURL = "channel/removeowner/v1"
@@ -198,8 +195,7 @@ def test_http_channel_removeowner_only_owner():
         "name": "testChannel",
         "is_public": True,
     }
-    channel = requests.post(config.url + funcURL, json=inputData)
-    channelR = json.loads(channel.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Removing Owner--------------------
     funcURL = "channel/removeowner/v1"
@@ -233,8 +229,7 @@ def test_http_channel_removeowner_not_owner():
         "name": "testChannel",
         "is_public": True,
     }
-    channel = requests.post(config.url + funcURL, json=inputData)
-    channelR = json.loads(channel.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Register--------------------
     funcURL = "auth/register/v2"
@@ -279,8 +274,7 @@ def test_http_channel_removeowner_invalid_token():
         "name": "testChannel",
         "is_public": True,
     }
-    channel = requests.post(config.url + funcURL, json=inputData)
-    channelR = json.loads(channel.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Register--------------------
     funcURL = "auth/register/v2"
@@ -377,8 +371,7 @@ def test_http_channel_leave_channel_valid():
         "name": "testChannel",
         "is_public": True,
     }
-    channel = requests.post(config.url + funcURL, json=inputData)
-    channelR = json.loads(channel.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Leaving Channel--------------
     funcURL = "channel/leave/v1"

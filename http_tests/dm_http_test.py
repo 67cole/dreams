@@ -99,8 +99,7 @@ def test_http_dm_leave_invalid_dm():
         "token": userR["token"],
         "u_ids": userList,
     }
-    dm = requests.post(config.url + funcURL, json=inputData)
-    dmR = json.loads(dm.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Leaving DM-----------------
     funcURL = "dm/leave/v1"
@@ -324,8 +323,7 @@ def test_http_dm_remove_invalid_id():
         "token": userR["token"],
         "u_ids": userList,
     }
-    dm = requests.post(config.url + funcURL, json=inputData)
-    dmR = json.loads(dm.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Removing DM-----------------
     funcURL = "dm/remove/v1"
@@ -574,8 +572,7 @@ def test_http_dm_message_invalid_dm():
         "token": userR["token"],
         "u_ids": userList,
     }
-    dm = requests.post(config.url + funcURL, json=inputData)
-    dmR = json.loads(dm.text)
+    _ = requests.post(config.url + funcURL, json=inputData)
     # ----------------------------
     # Checking Messages-----------------
     funcURL = "dm/messages/v1"
@@ -590,7 +587,7 @@ def test_http_dm_message_invalid_dm():
     assert dmMessagesR["code"] == 400
     # ----------------------------
 
-def test_http_dm_message_invalid_dm():
+def test_http_dm_message_unauthorised_user():
     requests.delete(config.url + "clear/v1")
 
     # Register--------------------

@@ -157,9 +157,8 @@ def dmMessages():
 @APP.route("/dm/leave/v1", methods=["POST"])
 def dmLeave():
     inputData = request.get_json()
-    returnData = dm_leave_v1(inputData["token"], inputData["dm_id"])
-    saveData()
-    return dumps(returnData)
+    dm_leave_v1(inputData["token"], inputData["dm_id"])
+    return {}
 
 @APP.route("/dm/remove/v1", methods=["DELETE"])
 def dmRemove():
