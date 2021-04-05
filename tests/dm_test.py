@@ -1,4 +1,5 @@
 import pytest
+import re
 import jwt
 from src.other import clear_v1
 from src.auth import auth_register_v2
