@@ -25,9 +25,9 @@ def test_channel_messages_invalid_userid():
     clear_v1()
     user = auth_register_v2("email@gmail.com", "password", "Name", "Lastname")
     channel = channels_create_v2(user["token"], "testchannel", True)
-    invalid_id = jwt.encode({"sessionId": 2}, secretSauce, algorithm = "HS256")
+    temp = jwt.encode({"sessionId": 4}, secretSauce, algorithm = "HS256")
     with pytest.raises(AccessError):
-        channel_messages_v2(invalid_id, channel["channel_id"], 0)
+        channel_messages_v2(temp, channel["channel_id"], 0)
 
 def test_channel_messages_invalid_channelid():
 
@@ -470,7 +470,9 @@ def test_valid_addowner():
 
     channel_addowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
 
-    assert checkOwner(user2_id, channel1.get("channel_id")) == True
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+
+    assert checkOwner(user2_id, channelDetails) == True
 
 # ------------------------------------------------------------------------------------------------------
 # removeowner_v1 testing
@@ -486,13 +488,16 @@ def test_removeowner():
     user2_id = user2.get("auth_user_id")
 
     channel_addowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
-    assert checkOwner(user2_id, channel1.get("channel_id")) == True
+
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+
+    assert checkOwner(user2_id, channelDetails) == True
 
     channel_removeowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
-    assert checkOwner(user2_id, channel1.get("channel_id")) == False
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user2_id, channelDetails) == False
 
 #Testing multiple main implementations
-
 def test_removeowner_multiple():
     clear_v1()
     user1 = auth_register_v2("email@gmail.com", "password", "Name", "Lastname")
@@ -508,23 +513,28 @@ def test_removeowner_multiple():
     user4_id = user4.get("auth_user_id")
 
     channel_addowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
-    assert checkOwner(user2_id, channel1.get("channel_id")) == True
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user2_id, channelDetails) == True
 
     channel_addowner_v1(user1["token"], channel1.get("channel_id"), user3_id)
-    assert checkOwner(user3_id, channel1.get("channel_id")) == True
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user3_id, channelDetails) == True
 
     channel_addowner_v1(user1["token"], channel1.get("channel_id"), user4_id)
-    assert checkOwner(user4_id, channel1.get("channel_id")) == True
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user4_id, channelDetails) == True
 
     channel_removeowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
-    assert checkOwner(user2_id, channel1.get("channel_id")) == False
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user2_id, channelDetails) == False
 
     channel_removeowner_v1(user1["token"], channel1.get("channel_id"), user3_id)
-    assert checkOwner(user3_id, channel1.get("channel_id")) == False
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user3_id, channelDetails) == False
 
     channel_removeowner_v1(user1["token"], channel1.get("channel_id"), user4_id)
-    assert checkOwner(user4_id, channel1.get("channel_id")) == False
-
+    channelDetails = channel_details_v2(user1["token"], channel1.get("channel_id"))
+    assert checkOwner(user4_id, channelDetails) == False
 #Testing invalid channel id
 
 def test_removeowner_invalid_channel():
@@ -574,7 +584,7 @@ def test_removeowner_user_not_owner():
         channel_removeowner_v1(user1["token"], channel1.get("channel_id"), user2_id)
 
 #Testing user is the only owner
-def test_removeowner_user_already_owner():
+def test_removeowner_user_only_owner():
     clear_v1()
     user1 = auth_register_v2("email@gmail.com", "password", "Name", "Lastname")
     user1_token = user1.get("token")
@@ -602,3 +612,9 @@ def test_removeowner_not_authorised_user():
         channel_removeowner_v1(temp, channel1.get("channel_id"), user1["auth_user_id"])
 
 # ------------------------------------------------------------------------------------------------------
+def checkOwner(u_id, channelDetails):
+    check = False
+    for owner in channelDetails["owner_members"]:
+        if u_id is owner.get("u_id"): 
+            check = True
+    return check    

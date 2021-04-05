@@ -9,7 +9,8 @@ from src.auth import auth_register_v2, auth_login_v2, auth_logout_v1
 from src.user import user_profile_v2, user_profile_setemail_v2, users_all_v1
 from src.user import user_profile_setname_v2, user_profile_sethandle_v1
 from src.utils import saveData
-from src.channel import channel_removeowner_v1, channel_leave_v1
+from src.channel import channel_removeowner_v1, channel_leave_v1, channel_addowner_v1
+from src.channels import channels_list_v2, channels_create_v2
 from src.dm import dm_leave_v1, dm_remove_v1, dm_messages_v1, dm_create_v1, dm_list_v1
 from src.other import clear_v1
 
@@ -105,6 +106,22 @@ def usersAll():
     return dumps(returnData)
 
 # ##############################################################################
+# CHANNELS FUNCTIONS
+@APP.route("/channels/list/v2", methods=["GET"])
+def channelList():
+    inputToken = request.args.get("token")
+    returnData = channels_list_v2(inputToken)
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/channels/create/v2", methods=["POST"])
+def channelsCreate():
+    inputData = request.get_json()
+    returnData = channels_create_v2(inputData["token"], inputData["name"], inputData["is_public"])
+    saveData()
+    return dumps(returnData)
+
+# ##############################################################################
 # CHANNEL FUNCTIONS
 @APP.route("/channel/leave/v1", methods=["POST"])
 def channelLeave():
@@ -113,10 +130,17 @@ def channelLeave():
     saveData()
     return dumps(returnData)
 
+@APP.route("/channel/addowner/v1", methods=["POST"])
+def channelAddowner():
+    inputData = request.get_json()
+    returnData = channel_addowner_v1(inputData["token"], inputData["channel_id"], inputData["u_id"])
+    saveData()
+    return dumps(returnData)
+
 @APP.route("/channel/removeowner/v1", methods=["POST"])
 def channelRemoveowner():
     inputData = request.get_json()
-    returnData = channel_removeowner_v1(inputData["token"], inputData["channel_id"])
+    returnData = channel_removeowner_v1(inputData["token"], inputData["channel_id"], inputData["u_id"])
     saveData()
     return dumps(returnData)
 # ##############################################################################
@@ -124,8 +148,8 @@ def channelRemoveowner():
 @APP.route("/dm/messages/v1", methods=["GET"])
 def dmMessages():
     inputToken = request.args.get("token")
-    inputdmID = request.args.get("dm_id")
-    inputStart = request.args.get("start")
+    inputdmID = int(request.args.get("dm_id"))
+    inputStart = int(request.args.get("start"))
     returnData = dm_messages_v1(inputToken, inputdmID, inputStart)
     saveData()
     return dumps(returnData)
