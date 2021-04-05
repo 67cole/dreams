@@ -1,6 +1,7 @@
 import pytest
 import jwt
-from src.other import clear_v1
+import re
+from src.other import clear_v1, search_v1
 from src.auth import auth_register_v2
 from src.error import InputError, AccessError
 from src.channel import channel_messages_v2
@@ -254,7 +255,6 @@ def testsenddm_invalid_token():
     with pytest.raises(AccessError):
         message_senddm_v1(invalid_token, dm["dm_id"], "Thomas Chen")
 
-
 # invalid dm_ID
 def testsenddm_invalid_dm_ID():
     clear_v1()
@@ -264,7 +264,6 @@ def testsenddm_invalid_dm_ID():
 
     with pytest.raises(InputError):
         message_senddm_v1(user["token"], "invalid_dmID", "Thomas Chen")
-
 
 # user not in DM
 def testsenddm_user_notin_dm():
@@ -277,7 +276,6 @@ def testsenddm_user_notin_dm():
 
     with pytest.raises(AccessError):
         message_senddm_v1(user3["token"], dm["dm_id"], "Jonathan Qiu")
-
 
 # valid testing
 def testsenddm_valid():
@@ -302,5 +300,4 @@ def testsenddm_valid():
         if second["u_id"] is user["auth_user_id"]:
             assert second["message_id"] == 2
             assert second["message"] == 'Thomas'
-
 
