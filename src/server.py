@@ -8,10 +8,12 @@ from src.database import data, secretSauce
 from src.auth import auth_register_v2, auth_login_v2, auth_logout_v1
 from src.user import user_profile_v2, user_profile_setemail_v2, users_all_v1
 from src.user import user_profile_setname_v2, user_profile_sethandle_v1
-from src.channel import channel_addowner_v1
+from src.channel import channel_addowner_v1, channel_messages_v2
+from src.channels import channels_create_v2
 from src.message import message_send_v2, message_edit_v2, message_remove_v1, message_senddm_v1
 from src.utils import saveData
 from src.other import clear_v1
+from src.dm import dm_create_v1, dm_list_v1, dm_invite_v1
 
 def defaultHandler(err):
     response = err.get_response()
@@ -65,6 +67,7 @@ def authLogout():
     returnData = auth_logout_v1(inputData)
     saveData()
     return dumps(returnData)
+
 # ##############################################################################
 # USER FUNCTIONS
 @APP.route("/user/profile/v2", methods=["GET"])
@@ -105,7 +108,7 @@ def usersAll():
     return dumps(returnData)
 
 # COLINS CODE BELOW:
-"""
+'''
 
 # #############################################################################
 #                                                                             #
@@ -140,6 +143,21 @@ def messageRemove():
     returnData = message_senddm_v1(inputdata["token"], inputData["dm_id"], inputdata["message"])
     saveData()
     return dumps(returnData)
+'''
+
+# #############################################################################
+#                                                                             #
+#                           CHANNELS FUNCTIONS                                #
+#                                                                             #
+# #############################################################################
+
+@APP.route("/channels/create/v2", methods=["POST"])
+def channelsCreate():
+    inputData = request.get_json()
+    returnData = channels_create_v2(inputData["token"], inputData["name"], inputData["is_public"])
+    saveData()
+    return dumps(returnData)
+
 
 
 
@@ -149,15 +167,55 @@ def messageRemove():
 #                                                                             #
 # #############################################################################
 
+@APP.route("/channel/messages/v2", methods=["GET"])
+def channelMessages():
+    inputData = {
+        'token': request.args.get("token"),
+        'channel_id': int(request.args.get("channel_id")),
+        'start': int(request.args.get("start")),
+    }
+    returnData = channel_messages_v2(inputData["token"], inputData["channel_id"], inputData["start"])
+    saveData()
+    return dumps(returnData)
+
+
+
+'''
 @APP.route("/channel/addowner/v1", methods=["POST"])
 def channelAddowner():
     inputData = request.get_json()
     returnData = channel_addowner_v1(inputData["token"], inputData["channel_id"], inputData["u_id"])
     saveData()
     return dumps(returnData)
+'''
 
-"""
+# #############################################################################
+#                                                                             #
+#                           DM FUNCTIONS                                      #
+#                                                                             #
+# #############################################################################
 
+@APP.route("/dm/create/v1", methods=["POST"])
+def dmCreate():
+    inputData = request.get_json()
+    returnData = dm_create_v1(inputData["token"], inputData["u_ids"])
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/list/v1", methods=["GET"])
+def dmList():
+    inputToken = request.args.get("token")
+    returnData = dm_list_v1(inputToken)
+    saveData()
+    return dumps(returnData)
+
+@APP.route("/dm/invite/v1", methods=["POST"])
+def dmInvite():
+    inputData = request.get_json()
+    returnData = dm_invite_v1(inputData["token"], inputData["dm_id"], inputData["u_id"])
+    saveData()
+    return dumps(returnData)
+    
 # ##############################################################################
 
 @APP.route("/clear/v1", methods=["DELETE"])
