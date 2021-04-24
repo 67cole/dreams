@@ -4,140 +4,223 @@ Please set email account credentials as environment variables for email to work.
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: off
- * Running on http://127.0.0.1:60811/ (Press CTRL+C to quit)
-127.0.0.1 - - [21/Apr/2021 06:42:30] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:30] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:30] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:30] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:31] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/login/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/logout/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[31m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:32] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:37] "[37mPOST /auth/passwordreset/request/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:37] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:37] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:37] "[31m[1mPOST /auth/passwordreset/request/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /auth/passwordreset/reset/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /auth/passwordreset/reset/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,112] ERROR in app: Exception on /channel/join/v2 [POST]
+ * Running on http://127.0.0.1:6080/ (Press CTRL+C to quit)
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:50] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /admin/user/remove/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /admin/userpermission/change/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/register/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/login/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /auth/login/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:51,691] ERROR in app: Exception on /auth/logout/v1 [POST]
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 53, in auth_logout_server
+    token = str(request.json.get('token'))
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
+    response = err.get_response()
+AttributeError: 'AttributeError' object has no attribute 'get_response'
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[35m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:51,725] ERROR in app: Exception on /auth/logout/v1 [POST]
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 53, in auth_logout_server
+    token = str(request.json.get('token'))
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
+    response = err.get_response()
+AttributeError: 'AttributeError' object has no attribute 'get_response'
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[35m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:51,758] ERROR in app: Exception on /auth/logout/v1 [POST]
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 53, in auth_logout_server
+    token = str(request.json.get('token'))
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
+    response = err.get_response()
+AttributeError: 'AttributeError' object has no attribute 'get_response'
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[35m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:51,790] ERROR in app: Exception on /auth/logout/v1 [POST]
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 53, in auth_logout_server
+    token = str(request.json.get('token'))
+AttributeError: 'str' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
+    response = err.get_response()
+AttributeError: 'AttributeError' object has no attribute 'get_response'
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[35m[1mPOST /auth/logout/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:51,830] ERROR in app: Exception on /channel/join/v2 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -161,40 +244,40 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/join/v2 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mGET /channel/details/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjcxLCJsb2dpbl90aW1lIjoxNjE4OTUxMzU4LCJzYWx0IjoiYTJiMTc0MDktNmZiZS00YWRhLWEzM2ItODA2YjUxZGMzNTA0In0.Tso4dolGJAE_XDAA-x4r0QxAC_RkkQMIoZnkbisYo-M&channel_id=74 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,485] ERROR in app: Exception on /channel/addowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[35m[1mPOST /channel/join/v2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[31m[1mPOST /channel/join/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mGET /channel/details/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjY3LCJsb2dpbl90aW1lIjoxNjE5MTg2NTEyLCJzYWx0IjoiZWY0M2VhNDctYTEyZC00ZDNjLTgyN2QtNjRiMDVlZTUxMTQwIn0.5uQdg6FxAvqLEWXZ2DHQLU_6ziVUizbncEvmZm4J7LQ&channel_id=70 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,160] ERROR in app: Exception on /channel/addowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -202,7 +285,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 106, in channel_addowner_server
     u_id = int(request.json.get('u_id'))
-ValueError: invalid literal for int() with base 10: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjc2LCJsb2dpbl90aW1lIjoxNjE4OTUxMzU4LCJzYWx0IjoiNzExYzllNDYtZTQwYS00MjFmLWJlMTQtMDExNWI0NjE3OGU2In0.gD-JuNOEwMS4Td7PoAtzXUODXOgE2Uw5etQFKWB3hdw'
+ValueError: invalid literal for int() with base 10: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjcyLCJsb2dpbl90aW1lIjoxNjE5MTg2NTEyLCJzYWx0IjoiYzMxMTNmYTUtM2ZkOS00NTY3LTljOGQtNDQxNWQxOGRkMTczIn0.rjPvFwiXM-RUjOA42bIcASfj6MTJwvWZW3sXiVpggzs'
 
 During handling of the above exception, another exception occurred:
 
@@ -218,12 +301,12 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,544] ERROR in app: Exception on /channel/addowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,228] ERROR in app: Exception on /channel/addowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -247,12 +330,12 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,604] ERROR in app: Exception on /channel/addowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,280] ERROR in app: Exception on /channel/addowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -276,12 +359,12 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,664] ERROR in app: Exception on /channel/addowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,332] ERROR in app: Exception on /channel/addowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -305,42 +388,42 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[31m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mGET /channel/details/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjk1LCJsb2dpbl90aW1lIjoxNjE4OTUxMzU4LCJzYWx0IjoiYTQxOTRkOTUtNGY5MS00MjQ5LWJiMzgtNjY0Yzk0YzliODVlIn0.U0wuG7TIz3HWfUNHDsX0g_FbJI0LD5bDIduJxmYqkhg&channel_id=97 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/removeowner/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,920] ERROR in app: Exception on /channel/removeowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[31m[1mPOST /channel/addowner/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mGET /channel/details/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjkxLCJsb2dpbl90aW1lIjoxNjE5MTg2NTEyLCJzYWx0IjoiYjNlZWFmNDYtYTcyNS00MzgxLTgyMzktN2Y4ZGI1MmZmNzI2In0.HGFPAdbSCie4caQ0SiDpqHEzsqI6T98bdL_OzaAe1yY&channel_id=93 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/removeowner/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,574] ERROR in app: Exception on /channel/removeowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -364,13 +447,13 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:38,984] ERROR in app: Exception on /channel/removeowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/addowner/v1 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,643] ERROR in app: Exception on /channel/removeowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -394,11 +477,11 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:38] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:39,040] ERROR in app: Exception on /channel/removeowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,691] ERROR in app: Exception on /channel/removeowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -422,12 +505,12 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:39,098] ERROR in app: Exception on /channel/removeowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,742] ERROR in app: Exception on /channel/removeowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -451,12 +534,12 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:39,158] ERROR in app: Exception on /channel/removeowner/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,793] ERROR in app: Exception on /channel/removeowner/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -480,17 +563,17 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channel/leave/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjExNSwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6ImU0NDAxNGQ4LWUxZDgtNDNlNS05ZGIwLTg4OTUzM2YwNjNlOCJ9.IZqyErYxFULsdc0VBquH36-__Na8noqPqRaxtmJNvro HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:39,252] ERROR in app: Exception on /channel/leave/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/removeowner/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channel/leave/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjExMSwibG9naW5fdGltZSI6MTYxOTE4NjUxMiwic2FsdCI6ImM1OTFlMWUyLWM4Y2UtNDc5NS05MjQ0LTZlYThkYjdmNGNkNCJ9.xHbW1Gy3swaQcu6wZi3KMd7Z-ooE8ZSlAvZNHyLa0mI HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:52,864] ERROR in app: Exception on /channel/leave/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -514,116 +597,114 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[35m[1mPOST /channel/leave/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mPOST /channel/leave/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyMywibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6IjUxOGFiMjQ5LTk0ODktNDM4Ny1hYmUxLTAzMmI2OWM0YjhjYiJ9.WNZq7fxwf-hHZh5ocKzMiD7n1FQQSAcmPpSmSGfJR2U&channel_id=124&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyNiwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6Ijg3ZGU5NzEyLTEzMDQtNGM2Yy04ZmE2LWVmMGRjNjY2YTNmMyJ9.9ftVnHPzjw9bnzGLb7LcJnhmi7EdRux3efjIWNBXnck&channel_id=50&start=0 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyNywibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6Ijc5MDc3ZmJlLTUwMjctNGE5YS05NDQ2LTMxZjQ3MWVjYjRkZCJ9.jWbMe4lE58kyVGEgM5aFk_NasVpN79eLeEd-0WuzvEA&channel_id=128&start=1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEzMCwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6ImY2YzhhYmQ3LTQxMTItNDBiNi05ZjQ1LTRmOTIyYTk3MmNmNSJ9.5HZ04N8HxUALc5wMpmnujsC9reE_fYjvbcbGBAeLQIU&channel_id=131&start=0 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEzMiwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6IjAxOTUxZWExLWIzNTAtNDYyMy1hZTA4LWY3YjJhN2YwMTc1YSJ9.EW8PePGyVVqQsHFe-CoPEyaJWXn_Dxi_nCrSS7-88Fs&channel_id=133&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mPOST /channels/create/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mPOST /channels/create/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE0MiwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6IjJhM2NkY2RlLTA4YmMtNGIyZS1hYTU3LTc2MDRiMTY3NjdkMSJ9.yQRiXyd0p0xwbU4a2RPsCGb9FE8xdrwrT4674DAjZ7A HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjk5OX0.erYxCQ9czIu14IV0KRb7E4AecDGf1Ta1GmmRQpejfM4 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mGET /channels/listall/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE0NiwibG9naW5fdGltZSI6MTYxODk1MTM1OSwic2FsdCI6IjQzNTBkODI2LTNjMGUtNGUyOS05OGU3LTQxYjY4Mjk1YjU4ZCJ9.UqzrCg2PcdJoXX8wMylxP9OMRA1AQ5d9D2kOQPu-bnk HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mGET /channels/listall/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjk5OX0.erYxCQ9czIu14IV0KRb7E4AecDGf1Ta1GmmRQpejfM4 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:39] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE1NywibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6Ijc1ZjIxYTRjLTZmMTEtNGQ4OC05NzU5LTBjOGNlN2E0ODE5YSJ9.bUQCX5Stva8DvUiRoEWhCt98s4fqDBtQMTvpqXV_0RY HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE2OSwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6ImM3ZTkwZTg0LTEwYjEtNGIxOC1iNzE4LTkwNTgyYjNhNTkwNCJ9.yhE9s7QYXcvlqenVTqP45Rt_kbHXBOeMEJMbD_f2fXk HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.1YEfeZ4MlQoTQ1j2eKs2VRXUZD8tjD7nfXjg0BvBM24 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/leave/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE3NSwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6IjBiZDQ4N2E3LTgyZTYtNDg4ZS04YjM4LWFjNDlmZTE3MjczMiJ9.vYUtX05A2bZALUQ_w37qZkjrbBiXP0skVZkj-Z9GkRo HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:40,416] ERROR in app: Exception on /dm/leave/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[35m[1mPOST /channel/leave/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[31m[1mPOST /channel/leave/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:52] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjExOSwibG9naW5fdGltZSI6MTYxOTE4NjUxMiwic2FsdCI6IjgwNDAwNjU5LTc0NGEtNDYyYi1iZWE1LWM1NThhYzE2OGVlMiJ9.gapS-xgOaLvgFM9tIBN92gT6qtAP0cZY6BsicATdxiU&channel_id=120&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyMiwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjBhNWUwMmI5LTM2YzUtNDNiYi04Mzg2LTI4MDkwZDg4NzQ3OCJ9.4yEnXIBvt1J7lcFHxHTg2ldRg_OR_DLJq_KrSg26Xgo&channel_id=50&start=0 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyMywibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjIxNTdhZWNjLTBiMjItNDkyYi1iODg1LWE5NTk3MTc5MWUxZSJ9.1EDKDSV9Quf82QbbsshyGaQIb79Q6YK-5CfpCeUjmY0&channel_id=124&start=1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyNiwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjFlMTEwMzhkLTRiOTEtNGFjOC1hYmZjLWMwMTUyY2EwOTc4ZiJ9.zMbGrvgaLxIY_c1sr_gKvdPsMfXbTlWSSJx43fIfaq8&channel_id=127&start=0 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEyOCwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjU1YWY0MjJmLWNiYzAtNGFkZi04ODg0LWZiYTJlZDgwYTExMCJ9.zOAmFlDELSETv3aBwu8YVYerZSH5bC-HQ9gmW8hZ8ng&channel_id=129&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /channels/create/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /channels/create/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjEzOCwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjY2MmU0YmNhLTk2ODMtNDhmMS04OTQ4LWEyMDlkZjgwNjVlZCJ9.pnvFmCf5r0ebAXJLm4Wk9fZHZbsRgwONtN_SlyFXy6w HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /channels/list/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjk5OX0.erYxCQ9czIu14IV0KRb7E4AecDGf1Ta1GmmRQpejfM4 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mGET /channels/listall/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE0MiwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjRmMWExM2Q4LTIwOGMtNGM3MS1iYjBlLTUwYTg3ZDUyODMzZSJ9.a14j71R8TbAYtbWf9VF0nRgbgcZl_Gp_46QfBB7yR4o HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /channels/listall/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjk5OX0.erYxCQ9czIu14IV0KRb7E4AecDGf1Ta1GmmRQpejfM4 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE1MywibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6IjY3OThlZjM5LTRlN2MtNDM5MS05OTZmLWFjZmUyYTQyYThhZSJ9.j6qpMQyaB3tKaYBDgrjW1T-krh0sNxsr1QzpHSXj6b4 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/invite/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE2NSwibG9naW5fdGltZSI6MTYxOTE4NjUxMywic2FsdCI6ImFlZTk5NTI2LTEzMzgtNDc1Ny1iMDBlLWZmYmUzOGE2NzNhNCJ9.yIXBXxg6f3uWBrc15biFfqxHc4KF1FpCxF_migPWs-E HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.1YEfeZ4MlQoTQ1j2eKs2VRXUZD8tjD7nfXjg0BvBM24 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+[2021-04-24 00:01:53,905] ERROR in app: Exception on /dm/leave/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -647,30 +728,25 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[35m[1mPOST /dm/leave/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/leave/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mPOST /dm/leave/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /dm/remove/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE4NywibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6ImIzYmI3NGQ2LTlkZDctNDhjNC05MWI4LTQyMGRlMmM0YmJiZCJ9.seWUdn1c5fCLUnH8CMZ362QFdLIP6VJzqOeYjwYoUaY HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/list/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE4OCwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6IjI4MTY1ZTE5LTNhYTYtNDljZS1hZGZjLTNlZTU1ODQ2M2E5ZCJ9.HNLwn-3_BN7dGWBFfQ4wwDvDsySFHczqUxlwZvuaufw HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:40,621] ERROR in app: Exception on /dm/remove/v1 [DELETE]
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[35m[1mPOST /dm/leave/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:53] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+[2021-04-24 00:01:54,122] ERROR in app: Exception on /dm/remove/v1 [DELETE]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -694,81 +770,73 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[35m[1mDELETE /dm/remove/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mDELETE /dm/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mDELETE /dm/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjE5OSwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6ImYxMDNjNTQ5LTgxZGMtNDgyZS04MjU4LTI3ZDVjMzA0ZDU4ZiJ9.zIzkOV9-tAxqYdH2D25n3qHCiSeOX3YYJYmcV-8FrqU&dm_id=201&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.1YEfeZ4MlQoTQ1j2eKs2VRXUZD8tjD7nfXjg0BvBM24&dm_id=204&start=0 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIwNSwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6IjVhNWM3NTU3LWYwNWUtNGJiYS1iODI0LTgwYmFjMmI0MmM1NSJ9.0NCvl4YGiN0jeJnn4Wjj_mnu4Xmw6xOMNGBXN6pvuoQ&dm_id=999&start=0 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[31m[1mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIxMCwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6IjBkODI1ZTU4LWRiYzEtNGQ2ZC05YmJjLWM2NjhmZTdmZTY5NSJ9.mnaRvP9EaLY6jGbqknHwGIFCERF66YWeMWRhGB-d0QA&dm_id=211&start=0 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:40] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIxMiwibG9naW5fdGltZSI6MTYxODk1MTM2MCwic2FsdCI6IjNmNzI0MmQwLTViMDgtNGM2Mi1hNTIzLWFmY2E5YjBkZjdjZCJ9._jtDkwpw3-jS_LmwW399II4-VE9HhE4kEtg-p0jE3rI&dm_id=214&start=1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIxNSwibG9naW5fdGltZSI6MTYxODk1MTM2MSwic2FsdCI6ImM3ZDQ1M2UwLTJkOTAtNDQxNC05N2Y2LTNlN2ViZmE0NDc0NyJ9.Vrb_1sT1wmDM9jUujfUipL9R6zRtzviMvMJQquVaOGE&dm_id=217&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mGET /dm/details/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIxOCwibG9naW5fdGltZSI6MTYxODk1MTM2MSwic2FsdCI6ImQyZjY3NDUxLTdjYjctNDljYS1hYzAyLTdiODUxNmM1M2Q4ZiJ9.87rCz_ELs0NttblYf9dx2UTiBK1K_rRDcDcsH55RLO0&dm_id=1242134 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mGET /dm/details/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIyMywibG9naW5fdGltZSI6MTYxODk1MTM2MSwic2FsdCI6ImFhNmExY2QzLWU1ZTgtNGNkNS1iOThiLTM5NjhhNjNlMjRmYiJ9.MxsF8NHfF0yphHkb_UfkwmPMRDe59DgUBUdpD_BY0Nk&dm_id=224 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mGET /dm/details/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIyNSwibG9naW5fdGltZSI6MTYxODk1MTM2MSwic2FsdCI6IjY5N2UzMzg4LTU4MGYtNDk2ZC05NWIzLTBiYWFlMjAzMDU5YyJ9.mKHsevGHxclDTpeneJodxj9T1MkqkI4tMilBNsJi-hc&dm_id=227 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[33mGET /echo?data=hello HTTP/1.1[0m" 404 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:41,489] ERROR in app: Exception on /message/send/v2 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[35m[1mDELETE /dm/remove/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIwMSwibG9naW5fdGltZSI6MTYxOTE4NjUxNCwic2FsdCI6IjEzMzc1MzlmLTY2ZWYtNDEyOS05NjM5LTBlOWQxYmMwMGYwYyJ9.Wyd1672qrU6WtVVvzBgim3V9kxz-MDUzDxAup67tjpg&dm_id=999&start=0 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mGET /dm/details/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIxOSwibG9naW5fdGltZSI6MTYxOTE4NjUxNCwic2FsdCI6ImI5YmYyNTBjLWExMjQtNGZiMy04MGYwLTdlMjY0YWYyMzRlOCJ9.sZe4yyXh1jk4P5YMr9xx5oIt74aZvrYv4xctyKy_l3Y&dm_id=220 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mGET /dm/details/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIyMSwibG9naW5fdGltZSI6MTYxOTE4NjUxNCwic2FsdCI6IjY1MTFiYTIzLWYzZDYtNDg0Zi05NzUwLTAwZjMxZmRhZGIwMiJ9.9vdFB8mudKsbeeb62nq3xDTI-jqopui7m0XITTFffhI&dm_id=223 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[33mGET /echo?data=hello HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:54,894] ERROR in app: Exception on /message/send/v2 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -792,32 +860,37 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[35m[1mPOST /message/send/v2 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI0MCwibG9naW5fdGltZSI6MTYxODk1MTM2MSwic2FsdCI6IjViZjAzZmQ5LWQ5MTQtNGNlMy1iYmQ5LTUyMzU2MThlNDc5ZCJ9.HAm5J3bNr4khIW2Bmz3dAz0Hv82UUjoNV8cbwc9UicQ&channel_id=241&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:41,889] ERROR in app: Exception on /message/edit/v2 [PUT]
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[35m[1mPOST /message/send/v2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[31m[1mPOST /message/send/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjIzNiwibG9naW5fdGltZSI6MTYxOTE4NjUxNCwic2FsdCI6IjJmOTQ0NGRiLTM0ODEtNGE1NS1hNzY4LWQ4NzdiNGE2Zjc4ZCJ9.DeUAUdUKW2q7i4nUHgkIoDRdgOsemX25p1kG67IvHVA&channel_id=237&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPUT /message/edit/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:55,238] ERROR in app: Exception on /message/edit/v2 [PUT]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -841,37 +914,37 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[35m[1mPUT /message/edit/v2 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:41] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPUT /message/edit/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI1NiwibG9naW5fdGltZSI6MTYxODk1MTM2Miwic2FsdCI6IjVlYTVjY2Y4LTQ4NjgtNGZiZS1iOWVkLWZlZWRhZmYyNDhkMSJ9.Gxw7nwBD7U4ExMWuWVHaglItZuGzJ7XyC1nc7Nu8bss&channel_id=257&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPUT /message/edit/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI2MCwibG9naW5fdGltZSI6MTYxODk1MTM2Miwic2FsdCI6ImE5NjUxYzlmLTUwOTMtNDZlMS05ZGI5LTdlM2M0ZDk3NzViZSJ9.nalZo99VqT9mCaJmx2p5BQcMl15hEunjTlIAneRubw4&channel_id=261&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[31m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:42,313] ERROR in app: Exception on /message/remove/v1 [DELETE]
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[35m[1mPUT /message/edit/v2 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPUT /message/edit/v2 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPUT /message/edit/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI1NSwibG9naW5fdGltZSI6MTYxOTE4NjUxNSwic2FsdCI6ImE2NjMzZmUwLTJjMTItNDhkNC04ZjgxLTU4YzRmNmNiYzk3NyJ9.jDZOF875wYiYrpacZ2BFllqrtGUpDpODGwqHjjDckjM&channel_id=256&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPUT /message/edit/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI1OSwibG9naW5fdGltZSI6MTYxOTE4NjUxNSwic2FsdCI6ImM5ZjQyMDI0LTdhMTUtNGRjMy05YzExLWUxZGNmZDFjNGY3MSJ9.oOWUsRQfmHGlpiuWM9ITDRrED08PD1PDJYCDo5XHQzQ&channel_id=260&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:55,535] ERROR in app: Exception on /message/remove/v1 [DELETE]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -895,10 +968,10 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[35m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:42,386] ERROR in app: Exception on /message/remove/v1 [DELETE]
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[35m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:55,584] ERROR in app: Exception on /message/remove/v1 [DELETE]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -922,48 +995,48 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[35m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[31m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /message/remove/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI3NCwibG9naW5fdGltZSI6MTYxODk1MTM2Miwic2FsdCI6ImY4NzMyNGIwLWY5ZjEtNDY0Yi04ZmRlLWJkYjAyYjA3ZmQ2MCJ9.8F3e7pDSlfDPRSuwI88FgV0TxqAnLcOEiWy36OeND0Y&channel_id=275&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /message/remove/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI3OCwibG9naW5fdGltZSI6MTYxODk1MTM2Miwic2FsdCI6IjRkMWNkYzk1LTlmN2ItNDcyNy1hMWZmLWIzZmZjZGM4NGY0ZCJ9.04f6rqPwV57tQbOw6VAfHReWGj46vlVdQNB323WcZsU&channel_id=279&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:42,848] ERROR in app: Exception on /message/senddm/v1 [POST]
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[35m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mDELETE /message/remove/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /message/remove/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI3MywibG9naW5fdGltZSI6MTYxOTE4NjUxNSwic2FsdCI6IjlmODYwMTNhLTUwNmUtNDg4Mi04ZWFlLTU5MWU3YjliMWRkZiJ9._yUKMjewTF787B-2NvmcULtbhyWU0cdPFVVCwvawyEs&channel_id=274&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /message/remove/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI3NywibG9naW5fdGltZSI6MTYxOTE4NjUxNSwic2FsdCI6IjBmNjQ0N2Q1LTJjNTktNGU2Ny04YTE0LWVlZTEwYjllMDJkNiJ9.nSZEBg_3qhqzz1fjrZPrU2-QTcIqopNrnJWKhap5Vrg&channel_id=278&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+[2021-04-24 00:01:55,928] ERROR in app: Exception on /message/senddm/v1 [POST]
 Traceback (most recent call last):
   File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
@@ -987,424 +1060,105 @@ Traceback (most recent call last):
   File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
     response = err.get_response()
 AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[35m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:42] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI5OSwibG9naW5fdGltZSI6MTYxODk1MTM2Mywic2FsdCI6ImE5NmYwNjI4LTY4Y2ItNDIyNi1iNTNiLTk0MzE4NWMyZGIxNiJ9.fXuxf0-5KfNDe64OWQw9Xu1KWOBTwqdRTePMF43dUbE&dm_id=300&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/share/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/share/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/sendlater/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/sendlater/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:43,532] ERROR in app: Exception on /message/sendlater/v1 [POST]
-Traceback (most recent call last):
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 473, in message_sendlater_server
-    channel_id = int(request.json.get('channel_id'))
-ValueError: invalid literal for int() with base 10: 'invalid_id'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
-    return handler(e)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
-    response = err.get_response()
-AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[35m[1mPOST /message/sendlater/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/sendlater/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/sendlater/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[31m[1mPOST /message/sendlater/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mPOST /message/sendlater/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:43] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM0NCwibG9naW5fdGltZSI6MTYxODk1MTM2Mywic2FsdCI6ImJlYzZkMTYzLWYyMWMtNDI3NS1iOGNkLTYzYWJlZWQxYzI1ZCJ9.ovcbrQoC6H0j9KAHFlbwSGQzgf2dGlW3Hqzky_R0H-s&channel_id=345&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM0NCwibG9naW5fdGltZSI6MTYxODk1MTM2Mywic2FsdCI6ImJlYzZkMTYzLWYyMWMtNDI3NS1iOGNkLTYzYWJlZWQxYzI1ZCJ9.ovcbrQoC6H0j9KAHFlbwSGQzgf2dGlW3Hqzky_R0H-s&channel_id=345&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[31m[1mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:46] "[31m[1mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-[2021-04-21 06:42:47,064] ERROR in app: Exception on /message/sendlaterdm/v1 [POST]
-Traceback (most recent call last):
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/server.py", line 485, in message_sendlaterdm_server
-    dm_id = int(request.json.get('dm_id'))
-ValueError: invalid literal for int() with base 10: 'invalid_id'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask_cors/extension.py", line 165, in wrapped_function
-    return cors_after_request(app.make_response(f(*args, **kwargs)))
-  File "/import/kamen/3/cs1531/.local/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
-    return handler(e)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/api/error.py", line 5, in default_handler
-    response = err.get_response()
-AttributeError: 'ValueError' object has no attribute 'get_response'
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[35m[1mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 500 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[31m[1mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[31m[1mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mPOST /message/sendlaterdm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:47] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM2OCwibG9naW5fdGltZSI6MTYxODk1MTM2Nywic2FsdCI6ImMxNDI5MGMwLTEyNTQtNGMzNS05NDU1LTI2YTdjNDYwYmRhNCJ9.FAERDmREwp7MYwZXjCpn0FYXMEgvzVs7GsAqM8qH4II&dm_id=369&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM2OCwibG9naW5fdGltZSI6MTYxODk1MTM2Nywic2FsdCI6ImMxNDI5MGMwLTEyNTQtNGMzNS05NDU1LTI2YTdjNDYwYmRhNCJ9.FAERDmREwp7MYwZXjCpn0FYXMEgvzVs7GsAqM8qH4II&dm_id=369&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/react/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[31m[1mPOST /message/react/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/react/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM3NCwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjczYmM0Yjc4LTA2YWUtNDU2ZS1iZDI3LWNiMTMyNjlhODFjMSJ9.Fcz7JGdJvO3uRSQnGJRWAOW611QyBsStfwxbcQGboxw&dm_id=376&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/react/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/unreact/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[31m[1mPOST /message/unreact/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/react/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM4MSwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjZiYzAwOTQxLTg4NDktNDA1NC05MTIxLTQ4ZTFiMTFjNjM4MSJ9.Y7eYnU5VigK_tvx19SxumADW9_-xm4_mskU7yoVGbWo&dm_id=383&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/unreact/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM4MSwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjZiYzAwOTQxLTg4NDktNDA1NC05MTIxLTQ4ZTFiMTFjNjM4MSJ9.Y7eYnU5VigK_tvx19SxumADW9_-xm4_mskU7yoVGbWo&dm_id=383&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/pin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[31m[1mPOST /message/pin/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/pin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM4OSwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjY3MjAwMDM5LTM0NWYtNGU4ZS1hOWM0LTc4NmEyZGQyYTJkYyJ9.Uiw_92NDD8yrgHsMGMSLntybx2RExLcfJxyCTjLLuUs&dm_id=390&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/pin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/unpin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[31m[1mPOST /message/unpin/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/pin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM5NiwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjQ0YjYxYTFhLTQ0ZjEtNGU3ZS04Yzc4LTM0YTM2N2U0OTg2MCJ9.ZRPIpybtCpn1jK-xT6A7qAgaC1hXDj2YskRPv3NKDRo&dm_id=397&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /message/unpin/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM5NiwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjQ0YjYxYTFhLTQ0ZjEtNGU3ZS04Yzc4LTM0YTM2N2U0OTg2MCJ9.ZRPIpybtCpn1jK-xT6A7qAgaC1hXDj2YskRPv3NKDRo&dm_id=397&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mGET /notifications/get/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjM5OSwibG9naW5fdGltZSI6MTYxODk1MTM3MCwic2FsdCI6IjQ4OWM4MDU3LTc1N2ItNGI0ZC04ZTY2LTkxYTcyNjY4ZmJlNiJ9.9KbCdOLT6DzhBhlJXNU0UgK9Pk0aZfM5U_C-lKjCZ7E HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[31m[1mGET /notifications/get/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.jN9JsMIy1Auv18mZCxMmwGbthrs0SaUY_FAfXdgF15c HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:50] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mGET /search/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQwNywibG9naW5fdGltZSI6MTYxODk1MTM3MSwic2FsdCI6ImNjMDZmMWQwLTM1NTAtNGZjNC1iZDcwLWEyNDk5YzEwN2EwZCJ9.eXPAtQA0MHx2sKVcvgEErC-Hn17Bn6asTAHduafhVnM&query_str=Hello HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[31m[1mGET /search/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.1YEfeZ4MlQoTQ1j2eKs2VRXUZD8tjD7nfXjg0BvBM24&query_str=Hello HTTP/1.1[0m" 403 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[31m[1mPOST /standup/start/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mGET /standup/active/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQxNiwibG9naW5fdGltZSI6MTYxODk1MTM3MSwic2FsdCI6IjYyYTZkOWNhLTE3ZmItNDhhMy1hYjNkLTUyMTMyOWMyZmFiYyJ9.zIyQzDksJiurkb2tr15FY1itt6N5eSJbCqJSHD8JMRQ&channel_id=417 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[31m[1mGET /standup/active/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQxOCwibG9naW5fdGltZSI6MTYxODk1MTM3MSwic2FsdCI6IjYzOTFlYjlhLTQ5NzItNGEyOS05NTE5LTFkNmQ0NDkxYWI2ZCJ9.eFMsqa3TTlQ4_gTiahToJ-b4ZPp1ss8rn1uWWM_uK1w&channel_id=500 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/send/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:51] "[37mPOST /standup/send/v1 HTTP/1.1[0m" 200 -
-Exception in thread Thread-761:
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.7/threading.py", line 1166, in run
-    self.function(*self.args, **self.kwargs)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 24, in <lambda>
-    self.worker = threading.Timer(length, lambda: on_finish())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 136, in <lambda>
-    self.stand_up = StandUp(initiator, self, length, lambda: self.finish_standup())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 152, in finish_standup
-    self.add_message(self.stand_up.creator, self.stand_up.get_message(), override_max_length=True)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/group_base.py", line 106, in add_message
-    self.platform.analytics.track_message_send(initiator, msg)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/workspace.py", line 96, in track_message_send
-    n_sent_now = self.user_stats[agent.gid][IMessage][-1][0] + 1
-KeyError: 412
-
-Exception in thread Thread-766:
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.7/threading.py", line 1166, in run
-    self.function(*self.args, **self.kwargs)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 24, in <lambda>
-    self.worker = threading.Timer(length, lambda: on_finish())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 136, in <lambda>
-    self.stand_up = StandUp(initiator, self, length, lambda: self.finish_standup())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 152, in finish_standup
-    self.add_message(self.stand_up.creator, self.stand_up.get_message(), override_max_length=True)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/group_base.py", line 106, in add_message
-    self.platform.analytics.track_message_send(initiator, msg)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/workspace.py", line 96, in track_message_send
-    n_sent_now = self.user_stats[agent.gid][IMessage][-1][0] + 1
-KeyError: 414
-
-Exception in thread Thread-772:
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.7/threading.py", line 1166, in run
-    self.function(*self.args, **self.kwargs)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 24, in <lambda>
-    self.worker = threading.Timer(length, lambda: on_finish())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 136, in <lambda>
-    self.stand_up = StandUp(initiator, self, length, lambda: self.finish_standup())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 152, in finish_standup
-    self.add_message(self.stand_up.creator, self.stand_up.get_message(), override_max_length=True)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/group_base.py", line 106, in add_message
-    self.platform.analytics.track_message_send(initiator, msg)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/workspace.py", line 96, in track_message_send
-    n_sent_now = self.user_stats[agent.gid][IMessage][-1][0] + 1
-KeyError: 416
-
-Exception in thread Thread-778:
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.7/threading.py", line 1166, in run
-    self.function(*self.args, **self.kwargs)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 24, in <lambda>
-    self.worker = threading.Timer(length, lambda: on_finish())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 136, in <lambda>
-    self.stand_up = StandUp(initiator, self, length, lambda: self.finish_standup())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 152, in finish_standup
-    self.add_message(self.stand_up.creator, self.stand_up.get_message(), override_max_length=True)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/group_base.py", line 106, in add_message
-    self.platform.analytics.track_message_send(initiator, msg)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/workspace.py", line 96, in track_message_send
-    n_sent_now = self.user_stats[agent.gid][IMessage][-1][0] + 1
-KeyError: 418
-
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mGET /channel/messages/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQyMCwibG9naW5fdGltZSI6MTYxODk1MTM3MSwic2FsdCI6IjdhYWI5MzYwLTkxOWMtNGVkMi1iNzkxLTU0ZDNjMTA5YjI0ZCJ9.99y6z9CoBtX_g0W9PZsYRG4_8jwO3W0OExO_4r1RJ8w&channel_id=422&start=0 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /channel/join/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /standup/start/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[31m[1mPOST /standup/send/v1 HTTP/1.1[0m" 400 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:54] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mGET /user/profile/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQ0OCwibG9naW5fdGltZSI6MTYxODk1MTM3NSwic2FsdCI6Ijg3ZjUzOWM4LWI3OWUtNDZiNy05ZmQ3LThkYmExZDhlNzg2OSJ9.O5e5tWplwqfJ57pUlR1QWWW15BO9pQHevLHPP8S2vF8&u_id=448 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mGET /user/stats/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQ0OCwibG9naW5fdGltZSI6MTYxODk1MTM3NSwic2FsdCI6Ijg3ZjUzOWM4LWI3OWUtNDZiNy05ZmQ3LThkYmExZDhlNzg2OSJ9.O5e5tWplwqfJ57pUlR1QWWW15BO9pQHevLHPP8S2vF8 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mGET /user/profile/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQ1MCwibG9naW5fdGltZSI6MTYxODk1MTM3NSwic2FsdCI6ImY0NTc5NmVhLTliNzYtNDEyNS05NDM3LTQ2Y2E1MjNjMDFkYiJ9.B24zoRmfXvhwQ32Ez7EtOfbeoR7ebkVg3ZUfPIh5ueE&u_id=450 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[33mGET /users/stats/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQ1MCwibG9naW5fdGltZSI6MTYxODk1MTM3NSwic2FsdCI6ImY0NTc5NmVhLTliNzYtNDEyNS05NDM3LTQ2Y2E1MjNjMDFkYiJ9.B24zoRmfXvhwQ32Ez7EtOfbeoR7ebkVg3ZUfPIh5ueE HTTP/1.1[0m" 404 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
-Exception in thread Thread-796:
-Traceback (most recent call last):
-  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.7/threading.py", line 1166, in run
-    self.function(*self.args, **self.kwargs)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 24, in <lambda>
-    self.worker = threading.Timer(length, lambda: on_finish())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 136, in <lambda>
-    self.stand_up = StandUp(initiator, self, length, lambda: self.finish_standup())
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/channel.py", line 152, in finish_standup
-    self.add_message(self.stand_up.creator, self.stand_up.get_message(), override_max_length=True)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/group_base.py", line 106, in add_message
-    self.platform.analytics.track_message_send(initiator, msg)
-  File "/tmp_amd/kamen/export/kamen/3/cs1531/automark/src/domain/workspace.py", line 96, in track_message_send
-    n_sent_now = self.user_stats[agent.gid][IMessage][-1][0] + 1
-KeyError: 428
-
-127.0.0.1 - - [21/Apr/2021 06:42:57] "[37mPOST /user/profile/uploadphoto/v1 HTTP/1.1[0m" 200 -
-127.0.0.1 - - [21/Apr/2021 06:42:57] "[37mGET /user/profile/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjQ1MiwibG9naW5fdGltZSI6MTYxODk1MTM3NSwic2FsdCI6ImE4Y2UxMTI1LTZlOWQtNDliMS04YTZiLWU0Y2Q5NTcyMTJjYSJ9.hRJ0PMKKBibau8Lhgx9QVTbBXf9jsGmoubZiBqR87Qo&u_id=452 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[35m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:55] "[31m[1mPOST /message/senddm/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mGET /dm/messages/v1?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjI5OCwibG9naW5fdGltZSI6MTYxOTE4NjUxNiwic2FsdCI6ImMyM2M4ZGE3LTI5YmUtNDFlMy04ODIzLTIyZDlkOTY1ZjdiMSJ9.G-hVBEDq0NjYy8tB9dcnoGyHIdOwOSWoVG9_C4kdho4&dm_id=299&start=0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[31m[1mPOST /message/share/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[31m[1mPOST /message/share/v1 HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /dm/create/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/senddm/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/share/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[31m[1mPOST /dm/create/v1 HTTP/1.1[0m" 400 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /channels/create/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /message/send/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mGET /search/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnaWQiOjMzNiwibG9naW5fdGltZSI6MTYxOTE4NjUxNiwic2FsdCI6IjllMjNiZjY3LTI5NzItNGVlZS05NzZmLWQ2MDIzNWQ3NjczZiJ9.gAmOa6wqW6vyGEC7LQngwc9MB2Rauusy-xUP7u5wbec&query_str=Hello HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[31m[1mGET /search/v2?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzZXNzaW9uSWQiOjd9.1YEfeZ4MlQoTQ1j2eKs2VRXUZD8tjD7nfXjg0BvBM24&query_str=Hello HTTP/1.1[0m" 403 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mDELETE /clear/v1 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Apr/2021 00:01:56] "[37mPOST /auth/register/v2 HTTP/1.1[0m" 200 -
